@@ -16,6 +16,8 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 
+import Image from "next/image";
+
 import { VscAzureDevops } from "react-icons/vsc";
 
 import Reveal from "./Reveal";
@@ -94,6 +96,15 @@ export default function About() {
                   focused on real user needs.
                 </span>
               </h2>
+              <div className="relative mt-8 h-48 w-48 overflow-hidden rounded-2xl border border-white/10 bg-zinc-900">
+                <Image
+                  src="/profile.jpg"
+                  alt="Luis Avila"
+                  fill
+                  sizes="192px"
+                  className="object-cover"
+                />
+              </div>
             </div>
 
             {/* RIGHT */}
